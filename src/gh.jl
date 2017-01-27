@@ -1,8 +1,4 @@
 
-using Requests
-using JSON
-import Base: ==
-
 immutable NewPackage
     name::String
     author::String
