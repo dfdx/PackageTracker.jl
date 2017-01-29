@@ -1,1 +1,7 @@
 julia 0.5
+Requests
+JSON
+LightXML
+SQLite
+DataFrames
+HttpServer
