@@ -16,7 +16,7 @@ function update_rss(req::Request)
     new_pkgs = retrieve_new_packages()
     old_pkgs = Set(load_packages())
     upd_pkgs = [pkg for pkg in new_pkgs if !in(pkg, old_pkgs)]
-    insert_packages(upd_pkgs)
+    add_packages(upd_pkgs)
     return Response(200, "OK")
 end
 
